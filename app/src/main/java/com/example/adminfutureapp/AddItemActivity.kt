@@ -42,7 +42,7 @@ class AddItemActivity : AppCompatActivity() {
         // Khởi tạo phiên bản cơ sở dữ liệu firebase
         database = FirebaseDatabase.getInstance()
 
-        binding.AddItemButton.setOnClickListener {
+        binding.addItemButton.setOnClickListener {
             // Lấy dữ liệu từ form Filed
             foodName = binding.foodName.text.toString().trim()
             foodPrice = binding.FoodPrice.text.toString().trim()
