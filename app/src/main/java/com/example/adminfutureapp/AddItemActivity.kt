@@ -51,10 +51,10 @@ class AddItemActivity : AppCompatActivity() {
 
             if(!(foodName.isBlank() || foodPrice.isBlank() || foodDescription.isBlank() || foodIngredient.isBlank())){
                 uploadData()
-                Toast.makeText(this, "Item Add Successfully", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Thêm mặt hàng thành công", Toast.LENGTH_SHORT).show()
                 finish()
             }else{
-                Toast.makeText(this, "Fill all the details", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Điền vào tất cả các chi tiết", Toast.LENGTH_SHORT).show()
             }
 
         }
@@ -83,6 +83,7 @@ class AddItemActivity : AppCompatActivity() {
                     downloadUrl->
                     // Create a new menu item
                     val newItem = AllMenu(
+                        newItemKey,
                         foodName = foodName,
                         foodPrice = foodPrice,
                         foodDescription = foodDescription,
@@ -92,21 +93,21 @@ class AddItemActivity : AppCompatActivity() {
                     newItemKey?.let {
                         key ->
                         menuRef.child(key).setValue(newItem).addOnSuccessListener {
-                            Toast.makeText(this, "data uploaded successfully", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(this, "Dữ liệu được tải lên thành công", Toast.LENGTH_SHORT).show()
                         }
                             .addOnFailureListener{
-                                Toast.makeText(this, "data uploaded failed", Toast.LENGTH_SHORT).show()
+                                Toast.makeText(this, "Dữ liệu được tải lên không thành công", Toast.LENGTH_SHORT).show()
                             }
                     }
                 }
 
             }.addOnFailureListener{
-                Toast.makeText(this, "Image Upload failed", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Tải lên hình ảnh không thành công", Toast.LENGTH_SHORT).show()
             }
 
         }
             else{
-                Toast.makeText(this, "Please select an image ", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Vui lòng chọn một hình ảnh ", Toast.LENGTH_SHORT).show()
             }
     }
 

@@ -56,7 +56,7 @@
         android:drawableLeft="@drawable/home"
         android:drawablePadding="15dp"
         android:elevation="2dp"
-        android:hint="Name Of Restorent "
+        android:hint="Tên nhà hàng"
         android:inputType="textEmailAddress"
         android:outlineSpotShadowColor="@color/textcolor"
         android:paddingLeft="15dp"
@@ -76,7 +76,7 @@
         android:drawableLeft="@drawable/mail"
         android:drawablePadding="15dp"
         android:fontFamily="@font/lato_regular"
-        android:hint="Email Or Phone Number"
+        android:hint="Email hoặc số điện thoại"
         android:outlineSpotShadowColor="@color/textcolor"
         android:paddingLeft="15dp"
         app:layout_constraintEnd_toEndOf="@+id/restaurantName"
@@ -89,18 +89,16 @@
         android:layout_width="0dp"
         android:layout_height="57dp"
         android:layout_marginTop="12dp"
-        android:layout_marginBottom="8dp"
         android:background="@drawable/edittextshape"
         android:drawableLeft="@drawable/lock"
         android:drawablePadding="15dp"
         android:fontFamily="@font/lato_regular"
-        android:hint="Password"
+        android:hint="Mật khẩu"
         android:paddingLeft="15dp"
         app:layout_constraintEnd_toEndOf="@+id/emailOrPhone"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/emailOrPhone"
-        app:layout_constraintTop_toBottomOf="@+id/emailOrPhone"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/emailOrPhone" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/createUserButton"
@@ -111,7 +109,7 @@
         android:fontFamily="@font/yeonsung_regular"
         android:outlineSpotShadowColor="@color/textcolor"
         android:paddingLeft="15dp"
-        android:text="Create Account"
+        android:text="Tạo tài khoản"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="@color/white"
@@ -126,7 +124,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/lato_bold"
-        android:text="Already Have Account?"
+        android:text="Đã cso tài khoản ?"
         android:textColor="@color/textcolor"
         android:textSize="10dp"
         app:layout_constraintBottom_toTopOf="@+id/textView6"
@@ -139,9 +137,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/yeonsung_regular"
-        android:text="Choose You Location"
         android:layout_marginTop="12dp"
+        android:fontFamily="@font/yeonsung_regular"
+        android:text="Chọn vị trí của bạn"
         android:textColor="@color/textcolor"
         app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
         app:layout_constraintStart_toStartOf="@+id/textInputLayout"
@@ -168,10 +166,10 @@
             android:id="@+id/listOfLocation"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
             android:fontFamily="@font/lato_regular"
             android:inputType="none"
-            android:layout_marginTop="10dp"
-            android:text="Choose Location" />
+            android:text="Chọn vị trí" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <EditText
@@ -184,7 +182,7 @@
         android:drawablePadding="15dp"
         android:elevation="2dp"
         android:fontFamily="@font/lato_regular"
-        android:hint="Name Of Owner"
+        android:hint="Tên quản trị viên"
         android:inputType="textPassword"
         android:outlineSpotShadowColor="@color/textcolor"
         android:paddingLeft="8dp"

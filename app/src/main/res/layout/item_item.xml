@@ -49,8 +49,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:fontFamily="@font/yeonsung_regular"
-                android:text="Spacy fresh crab"
+                android:text="Phở chay"
                 android:textColor="@color/black"
+                android:textSize="17dp"
                 app:layout_constraintStart_toEndOf="@+id/cardView8"
                 app:layout_constraintTop_toTopOf="@+id/cardView8" />
 
@@ -64,7 +65,9 @@
                 android:textColor="@color/textcolor"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/cardView8" />
+                app:layout_constraintEnd_toEndOf="@+id/foodNameTextView"
+                app:layout_constraintStart_toEndOf="@+id/cardView8"
+                app:layout_constraintTop_toBottomOf="@+id/foodNameTextView" />
 
             <ImageButton
                 android:id="@+id/minusButton"
@@ -107,6 +110,7 @@
                 android:layout_marginBottom="8dp"
                 android:background="@android:color/transparent"
                 android:src="@drawable/trash"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.407"
                 app:layout_constraintStart_toStartOf="@+id/minusButton"
